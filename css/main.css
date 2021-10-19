@@ -110,20 +110,42 @@ body {
   height: 100%;
   color:ghostwhite;
 }
+header,
+footer,
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
+}
+header {
+    font-size: 40px;
+}
+
+main {
+    font-size: 30px;
+}
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row wrap;
+}
 .wrapper {
   /*add display:flex and set justify-content to space-between*/
   display: flex;
   justify-content: space-between;
   align-items:center;
-  
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  border-color: red;
 }
 
 .div-1, .div-2, .div-3 {
   /*give the divs a width of 30%, add display:flex, set justify-content and align-items to center*/
   color: #fff;
   line-height: 1.5em;
-  font-size: 1.25em;
+  font-size: 1em;
   background-color: #75706f;
 padding: 3px;
   height: 300px;
